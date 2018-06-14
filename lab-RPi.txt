@@ -45,3 +45,10 @@ first, check it by "ask co2" or "ask probe" etc. in our slack #wovyn channel
 this time, ok, so no fix needed
 unless, these are set up to also use beameio.net?
 
+5. fix Wovyn light sensor
+ent:lastTimestamp="2018-06-14T12:56:00.024Z"
+ent:lastTimestamp="2018-06-14T19:48:07.639Z"
+
+6. fix Wovyn push buttons
+ent:lastTimestamp="2018-06-06T21:40:00.400Z" (oh, only when button pushed)
+ent:lastTimestamp="2018-06-14T19:50:24.657Z" ok
