@@ -1,1 +1,27 @@
+When the lab Raspberry Pi stops responding
+
+  501  ifconfig
+  502  #on Jessie's wifi
+  503  history | tail
+  504  #make sure RPi has power
+  505  #find my ip address guessed it and converted to CIDR form for nmap scan
+  506  nmap 10.5.164.0/24 -sL #output way too long (256 entries)
+  507  nmap 10.5.164.0/24 -sL | grep -i pico #no output! it lost network
+  508  nmap 10.5.164.0/24 -sL | grep -i bruce #Nmap scan report for Bruces-MBP-2.byu.edu (10.5.164.62)
+  509  #didn't find it with "pico"
+  510  #remove and reconnect network cable 
+  511  nmap 10.5.164.0/24 -sL | grep -i pico #Nmap scan report for picolabs.byu.edu (10.5.164.64)
+  512  #NEWS FLASH it's IP has changed!!! OH NO
+  513  #fix Wovyn, Aurora, etc.
+  514  nmap 10.5.164.0/24 -sL | grep -i 10.5.36.219 #it's former IP on a different subnet
+  515  #urk
+  516  nmap 10.5.36.0/24 -sL | grep -i 10.5.36.219 #assigned to someone else byu424264wks.byu.edu
+  517  #longer term fix: get Jesse's wifi to give us a static IP?
+  518  #for now, it's IP is now and henceforward 10.5.164.64
+  519  history | tail -50
+
+TODO
+1. fix Aurora
+2. fix Wovyn Quad sensor
+3. fix Wovyn CO2 sensor
 
