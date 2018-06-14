@@ -20,8 +20,28 @@ When the lab Raspberry Pi stops responding
   518  #for now, it's IP is now and henceforward 10.5.164.64
   519  history | tail -50
 
+Obtain last heartbeat time from wovyn_router ruleset
+Last Wovyn Quad reading: ent:lastTimestamp="2018-06-14T12:58:50.126Z"
+Last Wovyn CO2 reading: ent:lastTimestamp="2018-06-14T13:04:10.710Z"
+
 TODO
+
+0. fix https://c8hc895h2z7mkjkc.v1.p.beameio.net/
+
 1. fix Aurora
-2. fix Wovyn Quad sensor
+?
+
+2. fix Wovyn Quad sensor Wovyn_0EC86F
+power down; press button; connect to its WiFi and use its capture screen
+replace IP:8080 with new IP and click save
+check: ent:lastTimestamp="2018-06-14T16:52:56.185Z"
+
 3. fix Wovyn CO2 sensor
+urk: having trouble getting its capture screen, but my first attempt worked
+ent:lastTimestamp="2018-06-14T16:48:47.923Z"
+
+4. fix slack integration
+first, check it by "ask co2" or "ask probe" etc. in our slack #wovyn channel
+this time, ok, so no fix needed
+unless, these are set up to also use beameio.net?
 
