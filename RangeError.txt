@@ -1,0 +1,120 @@
+Lab RPi crashed when attempting to view the pico-engine UI
+
+See what version of the engine it is running
+http://frog.byu.edu:8080/api/engine-version
+{"version":"0.45.6"}
+
+Looked in pico-engine repo for /api of that version of the engine
+  app.all('/api/engine-version', function (req, res, next) {
+  app.all('/api/db-dump', function (req, res, next) {
+  app.all('/api/root-eci', function (req, res, next) {
+  app.all('/api/pico/:id/rm-channel/:eci', function (req, res, next) {
+  app.all('/api/pico/:id/rm-ruleset/:rid', function (req, res, next) {
+  app.all('/api/pico/:id/rm-ent-var/:rid/:var_name', function (req, res, next) {
+  app.all('/api/ruleset/compile', function (req, res, next) {
+  app.all('/api/ruleset/register', function (req, res, next) {
+  app.all('/api/ruleset/flush/:rid', function (req, res, next) {
+  app.all('/api/ruleset/unregister/:rid', function (req, res, next) {
+  app.all('/api/ruleset-page', function (req, res, next) {
+
+Start at root pico
+http://frog.byu.edu:8080/api/root-eci
+{"ok":true,"eci":"2VwBphr2pLHJU5tAxTfFw4"}
+
+Find its direct children
+http://frog.byu.edu:8080/sky/cloud/2VwBphr2pLHJU5tAxTfFw4/io.picolabs.wrangler/children.json
+[
+  {
+    "parent_eci":"66fBCiBCuhkKj6oHLKNquE",
+    "name":"Wovyn",
+    "id":"cjk9xl65h0003cvd21ylfhszv",
+    "eci":"QTHpy69wNzPke7Qz6k8Z5C"
+  },
+  {
+    "parent_eci":"JVcBtA5u5CFeHendTtL6VJ",
+    "name":"Bruce",
+    "id":"cjk9zyyxy002lrsd2pmiz6ui1",
+    "eci":"FPQRohNPh7kmCYieBro9fy"
+  },
+  {
+    "parent_eci":"CydwxLc1FUrJ9wK1TS37yy",
+    "name":"Aurora",
+    "id":"cjka06guh003irsd273wbcjo7",
+    "eci":"JZhaqve1577ZRQifrJdvjp"
+  }
+]
+
+Suspect Wovyn device pico, so find children of Wovyn pico
+http://frog.byu.edu:8080/sky/cloud/QTHpy69wNzPke7Qz6k8Z5C/io.picolabs.wrangler/children.json
+[
+  {
+    "parent_eci":"cYGbEnnufTKyx4UiEYjVu",
+    "name":"Wovyn Button",
+    "id":"cjk9xql2x000gcvd2r80arr7m",
+    "eci":"SkfEowDUGxaY7zjE8H31k5"
+  },
+  {
+    "parent_eci":"9dWnFfPRiCqRWYA3466HHy",
+    "name":"Wovyn quad",
+    "id":"cjk9yx37n0007rsd278a5zysy",
+    "eci":"DRxvX28FM5RZNhNAb7Dkku"
+  },
+  {
+    "parent_eci":"LgE1kwfCVoxxEa8bpxHAka",
+    "name":"Wovyn light",
+    "id":"cjk9z7fxg0010rsd2buqmvg44",
+    "eci":"7xnYWcL3efdNsAyFhQTUus"
+  },
+  {
+    "parent_eci":"VPTZ8VW7BV5gcbNrx18Zk2",
+    "name":"Wovyn CO2",
+    "id":"cjk9zlgwm001hrsd2jkjmf44v",
+    "eci":"XudHCsGCmrYtJZbKqFjp31"
+  }
+]
+
+Suspect Wovyn quad pico, so find its installed rulesets
+http://frog.byu.edu:8080/sky/cloud/DRxvX28FM5RZNhNAb7Dkku/io.picolabs.wrangler/installedRulesets.json
+[
+  "io.picolabs.logging",
+  "io.picolabs.visual_params",
+  "io.picolabs.wrangler",
+  "wovyn_forwarder",
+  "wovyn_notifications",
+  "wovyn_probe_temps",
+  "wovyn_router"
+]
+
+Suspect the wovyn_probe_temps ruleset b/c it keeps all data
+consulting source code of the ruleset in repo
+https://github.com/Picolab/Wovyn/blob/master/krl/wovyn_probe_temps.krl
+
+Safe to just remove its probeTemps entity var b/c it uses defaultsTo
+http://frog.byu.edu:8080/api/pico/cjk9yx37n0007rsd278a5zysy/rm-ent-var/wovyn_probe_temps/probeTemps
+{"ok":true}
+
+Also, if it had logging turned on, that would store a boatload of information, so remove ruleset
+http://frog.byu.edu:8080/api/pico/cjk9yx37n0007rsd278a5zysy/rm-ruleset/io.picolabs.logging
+{"ok":true}
+
+Suspect the Wovyn CO2 pico b/c it also stores all readings
+http://frog.byu.edu:8080/sky/cloud/XudHCsGCmrYtJZbKqFjp31/io.picolabs.wrangler/installedRulesets.json
+[
+  "io.picolabs.visual_params",
+  "io.picolabs.wrangler",
+  "wovyn_co2_averages",
+  "wovyn_co2_levels",
+  "wovyn_forwarder",
+  "wovyn_notifications",
+  "wovyn_router"
+]
+
+consult its source code
+https://github.com/Picolab/Wovyn/blob/master/krl/wovyn_co2_levels.krl
+
+Safe to just remove its co2_levels entity var b/c it uses defaultsTo
+http://frog.byu.edu:8080/api/pico/cjk9zlgwm001hrsd2jkjmf44v/rm-ent-var/wovyn_co2_levels/co2_levels
+{"ok":true}
+
+And, now the UI works again!
+http://frog.byu.edu:8080/
