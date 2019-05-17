@@ -1,0 +1,37 @@
+Renewing Manifold's https certificates is pretty quick and easy.
+
+1) ssh into apps.picolabs.io with the correct ip address and pem file
+
+2) enter the command "sudo certbot certonly --force-renew -d apps.picolabs.io"
+
+3) you'll be shown something similar to this:
+
+How would you like to authenticate with the ACME CA?
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+1: Nginx Web Server plugin - Alpha (nginx)
+2: Spin up a temporary webserver (standalone)
+3: Place files in webroot directory (webroot)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Select the appropriate number [1-3] then [enter] (press 'c' to cancel)
+
+4) select Nginx and press enter
+
+5) exit and then ssh into manifold.picolabs.io with the correct ip address and same pem file
+
+6) enter the command "sudo certbot certonly --force-renew -d manifold.picolabs.io"
+
+7) you'll be shown something similar to this:
+
+How would you like to authenticate with the ACME CA?
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+1: Nginx Web Server plugin - Alpha (nginx)
+2: Spin up a temporary webserver (standalone)
+3: Place files in webroot directory (webroot)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Select the appropriate number [1-3] then [enter] (press 'c' to cancel)
+
+8) select Nginx and press enter
+
+9) exit manifold
+
+10) Done
