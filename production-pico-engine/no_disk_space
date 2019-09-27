@@ -4,3 +4,4 @@ Troubleshooting production pico-engine
 3. Next we “ls -lrt <directory>” to track down where the memory was going. We found a good portion of it was in the forever logs, which we deleted.
 4. We hypothesized that the pico engine was also storing a copy of the logs. We tested this using the command “find . -name pico-engine.log | wc” and then since the word count was small enough we did “find . -name pico-engine.log | wc” and then we deleted them
 5. Using “ls -lrt <directory>” we also found that a lot of the disk space was used on node_modules that are needed to build the production version of manifold, which we don’t necessarily need to do on the ec2 instance. We will in the future probably take all the build files off to save data
+6. Using "ls -lrt <directory>" on the .pico-engine directory we found 3 unused log files there which also helped clear up space
