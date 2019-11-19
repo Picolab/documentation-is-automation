@@ -13,7 +13,7 @@ Nmap scan report for frog (192.168.50.68)
 
 Connect monitor, keyboard, and mouse to lab raspberry pi and see what's going on
 
-There is no command window open!
+There is no command window open! So, I don't know why it crashed on Nov. 14
 
 `ps -aux` shows no pico-engine running
 
