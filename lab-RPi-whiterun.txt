@@ -1,0 +1,31 @@
+We've had to retire Jesse's WiFi
+
+Now using a new router, named Whiterun
+
+Lab pico-engine is at 192.168.50.68
+
+To learn this, set your machine to use Whiterun for its WiFi
+
+```
+$ nmap 192.168.50.0/24 -sL | grep frog
+Nmap scan report for frog (192.168.50.68)
+```
+
+Connect monitor, keyboard, and mouse to lab raspberry pi and see what's going on
+
+There is no command window open!
+
+`ps -aux` shows no pico-engine running
+
+Keyboard is in some strange mode and doesn't have either vertical bar nor backslash! AARGH!!!
+
+`pico-engine` starts engine
+
+But engine can't be reached!
+
+On the RPi, reachable as `localhost:8080` but not as `http://192.168.50.68:8080` browser just spins
+
+The reason is that my machine's browser was using `https` (but of course not _showing_ it)
+
+Edited it and it works now
+
