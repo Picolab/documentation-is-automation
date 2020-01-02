@@ -16,7 +16,7 @@ As the end of a month approaches, a new sheet needs to be prepared
 1. Click on Deploy and Review permissions
 1. Select the Google account and Allow all access
 1. Select all and copy the Current web app URL
-1. Open the Wovyn pico and its Testing tab
+1. Open the Wovyn Pico and its Testing tab
 1. For the `wovyn_probe_temp_recorder` rid, enter yyyy-mm and paste in the URL
 1. Click the button "probe_temp_recorder/new_month_url"
 
