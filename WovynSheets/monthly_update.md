@@ -4,9 +4,8 @@ TODO: these should be moved to the byupicolabs account
 
 As the end of a month approaches, a new sheet needs to be prepared
 
-1. Make a new sheet for the following month
-1. Copy the first tab ("day") of the current month to the new sheet
-1. Delete the first tab ("Sheet1") on the new month and rename "Copy of day" to just "day"
+1. Copy the first tab ("day") of the current month to a new sheet
+1. Visit the new sheet and give it the correct name for the new month
 1. Open Tools/Script Editor on the current month
 1. Select All and copy the script
 1. Open Tools/Script Editor on the new month and name the project
