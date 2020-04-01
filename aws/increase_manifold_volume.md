@@ -10,5 +10,10 @@ This is only necessary when the Manifold EC2 instance is running out of space an
 1. Set the size and click Modify
 
 ## Extend Partition
+1. ssh into the Manifold Instance
+1. Running the command `lsblk` will show you something like:
+  ```NAME    MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
+     xvda    202:0    0  20G  0 disk 
+     └─xvda1 202:1    0  8G   0 part /```
 
 ## Extend Filesystem
