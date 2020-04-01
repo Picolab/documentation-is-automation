@@ -1,4 +1,4 @@
-# Increase Manifold Volume
+# Extend Manifold Volume
 This is only necessary when the Manifold EC2 instance is running out of space and clearing the pico-engine logs and the forever logs doesn't fix the problem. 
 
 ## Extend EBS Volume Size
