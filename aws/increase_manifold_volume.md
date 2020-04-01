@@ -29,4 +29,5 @@ This is only necessary when the Manifold EC2 instance is running out of space an
      /dev/xvda1     ext4       16G  7.5G  8.1G  48% /
   ```
 1. Because our filesystem type is ext4, we run the command `sudo resize2fs /dev/xvda1`
+1. Finally, run `df -h` to confirm the changes took place.
 
