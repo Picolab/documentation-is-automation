@@ -14,6 +14,8 @@ This is only necessary when the Manifold EC2 instance is running out of space an
 1. Running the command `lsblk` will show you something like:
   ```NAME    MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
      xvda    202:0    0  20G  0 disk 
-     └─xvda1 202:1    0  8G   0 part /```
+     └─xvda1 202:1    0  8G   0 part /
+  ```
+1. test
 
 ## Extend Filesystem
