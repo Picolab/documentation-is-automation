@@ -29,3 +29,25 @@ The reason is that my machine's browser was using `https` (but of course not _sh
 
 Edited it and it works now
 
+# 5/8/2020 no quad readings since 4/30/2020
+
+Connected to RPi
+Terminal window open
+Message: terminate called after throwing an instance of 'std::bad_alloc'
+
+Cannot open a browser because "Faild to fork (Cannot allocate memory)
+
+Last timestamp in pico-engine log "2020-04-30T21:42:09.303Z"
+
+Tried simply `pico-engine`
+
+It ran long enough to accept one event from Wovyn, but ran out of memory again in the same way.
+
+Try `sudo reboot`
+
+Then opened a terminal and did `pico-engine`
+
+Handled a Wovyn event successfully.
+
+Also noted an error message for the ruleset "io.picolabs.google_signin" and flushed it
+
