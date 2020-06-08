@@ -36,3 +36,5 @@ Merging adds all of the commits that you've made on your branch with the branch 
 1. Be sure to delete your branch off of Github.
 
 ## Putting it all together
+1. If you haven't already, go to the repo you wish to work on and clone it.
+...[Github](git/images/1.png)
