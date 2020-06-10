@@ -46,7 +46,7 @@ Merging adds all of the commits that you've made on your branch with the branch 
 ![create a branch](images/4.png)
 6. Checkout the branch using `git checkout <name of branch>`
 ![checkout a branch](images/5.png)
-7. Use the command `git pull origin development` because we want to work from the latest version off the development branch.
+7. Use the command `git pull origin development` because we want to work from the latest version of the development branch.
 ![pull origin](images/6.png)
 8. Make your changes and add them with `git add <names of edited files>`
 ![add a file](images/7.png)
@@ -57,10 +57,10 @@ Merging adds all of the commits that you've made on your branch with the branch 
 11. Navigate back to your repo. You should see something like this:
 ![Github](images/10.png)
 12. Click `Compare & pull request`.
-14. Switch the branch to development, and click `Create pull request`.
+13. Switch the branch to development, and click `Create pull request`.
 ![pr](images/11.png)
-15. After reviewing your changes, click `Merge pull request`
+14. After reviewing your changes, click `Merge pull request`
 ![merge](images/12.png)
-16. Delete your branch off of Github by clicking `Delete branch`
+15. Delete your branch off of Github by clicking `Delete branch`
 ![delete branch](images/13.png)
-17. Done!
+16. Done!
