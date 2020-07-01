@@ -74,4 +74,4 @@ rule ruleset_find_gather {
 ```
 
 Then raise the `ruleset_find_scatter` rule with the `toFind` attribute being the rid you are searching for inside the root pico. You can start from any pico, but it will only search that pico and its children. Raising the event in root will search every pico on the engine.
-Give the engine some time to raise the event in each pico. Then, call the `result_find_results` function to view the results.
+Give the engine some time to raise the event in each pico. Finally, call the `result_find_results` function to view the results.
