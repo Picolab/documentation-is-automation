@@ -33,3 +33,5 @@ MDT will be used from then until 2 a.m. of the first Sunday of November.
 
 Important to make this code change _before_ the Saturday preceeding the second Sunday of March
 of the new year.
+
+Change [made](https://github.com/Picolab/Wovyn/commit/1f7cf3bb87045d9a87ecb1ee2950de29e57766d2) for 2021
