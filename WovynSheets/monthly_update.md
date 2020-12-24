@@ -1,6 +1,6 @@
-Wovyn data is maintained in Google sheets (belonging to Bruce)
-
-TODO: these should be moved to the picolabsbyu account
+Wovyn data is maintained in Google sheets (belonging to the picolabsbyu account)
+in [this folder](https://drive.google.com/drive/folders/1UO_bCpsOp7Lqnn8ruhHST4kHj2yPri4l?usp=sharing).
+Older data is maintained in sheets (belonging to Bruce Conrad's account) shared [here](https://drive.google.com/drive/folders/0B7J3rT8gOrIDQndTN1BuX19SeEU?usp=sharing).
 
 As the end of a month approaches, a new sheet needs to be prepared
 
@@ -22,4 +22,5 @@ As the end of a month approaches, a new sheet needs to be prepared
 
 Everything is now in readiness for the new month, and the first reading of that month will go into the new sheet
 
-Created a new sheet for December 2020 in the picolabsbyu account and shared [the Wovyn folder](https://drive.google.com/drive/folders/1UO_bCpsOp7Lqnn8ruhHST4kHj2yPri4l?usp=sharing) containing it
+Created a new sheet for December 2020 in the picolabsbyu account and shared [the Wovyn folder](https://drive.google.com/drive/folders/1UO_bCpsOp7Lqnn8ruhHST4kHj2yPri4l?usp=sharing) containing it.
+Today, created a sheet for January 2021 and updated this readme.
