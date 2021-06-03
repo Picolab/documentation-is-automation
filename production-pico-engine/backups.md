@@ -8,6 +8,13 @@
 
 `tar czf backups/$(date +%F-%H%M%S).tgz .pico-engine/db/` with a name of current date and time
 
+### Note
+
+As of June 2021, the production pico engine `db` folder is in `~/huh/.pico-engine/db` so the command to create a backup file would be
+```
+tar  czf  ~/backups/$(date +%F-%H%M%S).tgz  ~/huh/.pico-engine/db/
+```
+
 `exit`
 
 ## On the machine where backups will be kept
