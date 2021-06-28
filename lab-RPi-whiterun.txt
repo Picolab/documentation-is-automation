@@ -62,6 +62,7 @@ Nmap scan report for frog (192.168.50.68)
 
 But it doesn't respond on port 8080. Hooking up a monitor and keyboard... there was not terminal window open.
 Looking for file `pico-engine.log`... Found, and last log entry is dated from 6/26 so the pico engine must have crashed?
+Verified with `ps -aux` that it is not running.
 
 Launched `pico-engine` command and then tried from a browser on the same subnet:
 
@@ -70,4 +71,6 @@ http://192.168.50.68:8080/api/engine-version
 {"version":"0.45.6"}
 ```
 
-and it seems to be running again. I replaced the batteries, but that might not have been needed. Marking them as such.
+and it seems to be running again. Left terminal window open and unplugged display, keyboard, and mouse.
+
+I replaced the batteries, but that might not have been needed. Marking them as such.
