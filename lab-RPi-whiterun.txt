@@ -74,3 +74,7 @@ http://192.168.50.68:8080/api/engine-version
 and it seems to be running again. Left terminal window open and unplugged display, keyboard, and mouse.
 
 I replaced the batteries, but that might not have been needed. Marking them as such.
+
+# 7/5/2021 no quad readings since early this morning (GMT)
+
+The terminal window had closed! No indication of antything amiss in the logs. Restarted at 12:34.
