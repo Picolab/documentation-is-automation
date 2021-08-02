@@ -55,3 +55,7 @@ huh
 
 This will allow you to work with the snapshot of the production pico-engine.
 
+#### with a globally installed pico engine
+
+The command would be `PICO_ENGINE_HOME=... pico-engine`
+
