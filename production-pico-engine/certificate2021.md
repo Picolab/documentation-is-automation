@@ -48,3 +48,13 @@ ubuntu@ip-172-18-10-145:~$
 
 Yet a browser shows "Expires: Sunday, August 15, 2021 at 1:12:20 PM Mountain Daylight Time"
 
+## added Monday, August 16, 2021 at 9:41 AM
+
+Went to the website and it did not display anything, and showed an expired certificate.
+
+Logged in and ran the same two commands (above) with similar results.
+
+Went to the website and it displayed normally, but still showed an expired certificate.
+
+Held down shift key and reloaded the page and it displayed normally and shows a certificate valid until 
+Friday, November 12, 2021 at 7:00:49 AM Mountain Standard Time.
