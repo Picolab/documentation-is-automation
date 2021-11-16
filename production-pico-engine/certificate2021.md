@@ -58,3 +58,7 @@ Went to the website and it displayed normally, but still showed an expired certi
 
 Held down shift key and reloaded the page and it displayed normally and shows a certificate valid until 
 Friday, November 12, 2021 at 7:00:49 AM Mountain Standard Time.
+
+## added Tuesday, November 16, 2021 at 8:42 AM
+
+Certificate now valid until Thursday, January 13, 2022 at 8:30:53 AM Mountain
