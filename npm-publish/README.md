@@ -34,3 +34,4 @@ by making a note of all the changes since the previous version.
 ### Step 3
 
 Follow Matthew's instructions above.
+* Note that you have to run `npm run setup` to install some things *before* you can run `npm run clean-setup`
