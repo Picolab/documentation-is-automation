@@ -114,3 +114,5 @@ If it didn't publish anything, you can undo lerna's commit. Resolve the issue. T
 
 Here's one way to undo a single git commit: `git reset --soft HEAD~ && git reset -- .`
 You may also need to remove the git tag: `git tag -l` to view your tags, and `git tag -d v1.2.0` to remove one
+
+If it's too much of a hassle to undo the git stuff, you can try publishing again but increment the patch version.
