@@ -62,3 +62,7 @@ Friday, November 12, 2021 at 7:00:49 AM Mountain Standard Time.
 ## added Tuesday, November 16, 2021 at 8:42 AM
 
 Certificate now valid until Thursday, January 13, 2022 at 8:30:53 AM Mountain
+
+## added Tuesday, January 11, 2022
+
+Certificate now valid until Monday, February 14, 2022 at 7:39:39 AM Mountain Standard Time
