@@ -6,9 +6,9 @@ As the end of a month approaches, a new sheet needs to be prepared
 
 1. Copy the first tab ("day") of the current month to a new sheet
 1. Visit the new sheet and give it the correct name for the new month
-1. Open Tools/Script Editor on the current month
+1. Open Extensions/Apps Script on the current month
 1. Select All and copy the script
-1. Open Tools/Script Editor on the new month and name the project
+1. Open Extensions/Apps Script on the new month and name the project
 1. Select All and paste the script
 1. Use File/Save to save the script (not sure where it's saved to, but seems to be necessary)
 1. Open Publish/Deploy as web app... 
@@ -28,3 +28,4 @@ Today, created a sheet for January 2021 and updated this readme.
 Today, created a sheet for July 2021 at https://script.google.com/macros/s/AKfycbz0aWLgJRJsSw6lnYpGSU4LUc6wsN73eeqxixKwTE306cE3gnZh/exec
 
 Today, created a sheet for September 2021 at https://script.google.com/macros/s/AKfycbz2WsDIrLCL9R52w4vxfqqN1gTWsUMgjRq0ljv_Cz09D6UUQXU/exec and future sheets through January 2022.
+Today created February 2022 at https://script.google.com/macros/s/AKfycbx1JX3NFZtR3q2LnrSZNbQnPG56-36PpbgaISBkeJ5tslXSHFs/exec
