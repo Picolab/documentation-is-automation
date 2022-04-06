@@ -66,3 +66,10 @@ Certificate now valid until Thursday, January 13, 2022 at 8:30:53 AM Mountain
 ## added Tuesday, January 11, 2022
 
 Certificate now valid until Monday, February 14, 2022 at 7:39:39 AM Mountain Standard Time
+
+## added Wednesday, April 6, 2022
+
+Browser shows it will expire April 11, but `sudo certbot renew` won't renew saying it expires on 2022-05-18.
+Forcing and `certbot` now says it "will expire 2022-07-05."
+Browser now shows it valid until "Wednesday, May 18, 2022 at 7:34:10 AM Mountain".
+I will never understand this.
