@@ -2,6 +2,7 @@
 
 The times we have noticed this and checked in a fix:
 
+- April 28, 2022 [commit](https://github.com/Picolab/Manifold/commit/f04aa21eae7fcb7dc2447050bc8ace332c29b91b)
 - September 14, 2021 [commit](https://github.com/Picolab/Manifold/commit/f95cc4e754f746f1c5842fd434ea3e300d957d8b)
 - March 5, 2021 [commit](https://github.com/Picolab/Manifold/commit/35de956b1ef5f22ea54f383ab6115ae81bd9f4bb#diff-ee0d263c8b39fae22976099a1baff0e19527479cf9892cd40cda9916e70b6b1a)
 - August 3, 2020 [commit](https://github.com/Picolab/Manifold/commit/800ef7220c8244b8844143acfdee1bfed8dbc9df#diff-ee0d263c8b39fae22976099a1baff0e19527479cf9892cd40cda9916e70b6b1a)
@@ -17,11 +18,12 @@ Instead there is a broken image and the word "Avatar".
 
 1. Find the file in the Manifold repo [Manifold_krl/io.picolabs.profile.krl](https://github.com/Picolab/Manifold/blob/master/Manifold_krl/io.picolabs.profile.krl)
 2. Add a `klog` to [line 82](https://github.com/Picolab/Manifold/blob/master/Manifold_krl/io.picolabs.profile.krl#L82) so that you'll be able to see what Google provides
-3. Modify the code to use the new keys
-4. Push your changes
-5. Wait a bit to be sure the raw version of the ruleset on GitHub has the changes
-6. Flush the ruleset (or reinstall from the raw URL)
-7. Log out and back in to Manifold to see your avatar and name
+3. Logout and back in to Manifold; check your owner pico's Logging tab, looking for `event/ECI/EID/profile/google_profile_save`
+4. Modify the code to use the new keys
+5. Push your changes
+6. Wait a bit to be sure the raw version of the ruleset on GitHub has the changes
+7. Flush the ruleset (or reinstall from the raw URL)
+8. Log out and back in to Manifold to see your avatar and name
 
 Make a note to check again in 5-7 months.
 
