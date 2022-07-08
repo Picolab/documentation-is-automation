@@ -73,3 +73,8 @@ Browser shows it will expire April 11, but `sudo certbot renew` won't renew sayi
 Forcing and `certbot` now says it "will expire 2022-07-05."
 Browser now shows it valid until "Wednesday, May 18, 2022 at 7:34:10 AM Mountain".
 I will never understand this.
+
+## added Friday, July 8, 2022
+
+Same kind of thing. `sudo certbot renew` won't renew, so had to force it again.
+![Screen Shot 2022-07-08 at 15 14 25](https://user-images.githubusercontent.com/19273926/178071379-6f227417-3add-4db5-b81e-56b7b3f58a47.png)
