@@ -78,3 +78,14 @@ I will never understand this.
 
 Same kind of thing. `sudo certbot renew` won't renew, so had to force it again.
 ![Screen Shot 2022-07-08 at 15 14 25](https://user-images.githubusercontent.com/19273926/178071379-6f227417-3add-4db5-b81e-56b7b3f58a47.png)
+
+## added Friday, August 12, 2022
+
+Learned something new.
+The certificate _has_ been renewed, and all that was needed was this command:
+```
+sudo service nginx restart
+```
+<img width="409" alt="Screen Shot 2022-08-12 at 09 23 10" src="https://user-images.githubusercontent.com/19273926/184387616-fae1d746-e670-4beb-8ab0-3bbbca43f88b.png">
+I did a little investigating to see why that wasn't done after the auto-renewal of the certificate,
+but didn't find anything.
