@@ -89,3 +89,9 @@ sudo service nginx restart
 <img width="409" alt="Screen Shot 2022-08-12 at 09 23 10" src="https://user-images.githubusercontent.com/19273926/184387616-fae1d746-e670-4beb-8ab0-3bbbca43f88b.png">
 I did a little investigating to see why that wasn't done after the auto-renewal of the certificate,
 but didn't find anything.
+
+## added Wednesday, October 5, 2022
+
+Restarted `nginx`
+
+<img width="450" alt="Screen Shot 2022-10-05 at 07 20 24" src="https://user-images.githubusercontent.com/19273926/194070656-043fb906-074a-4387-b7b9-3d231739105d.png">
