@@ -2,6 +2,7 @@
 
 The times we have noticed this and checked in a fix:
 
+- May 24, 2023 [commit](https://github.com/Picolab/Manifold/commit/6e9acd5c15d7ac6c17d5a9f72d12e08e2e762016)
 - April 17, 2023 [commit](https://github.com/Picolab/Manifold/commit/844dd1ed8c950de69a298012983999d20a3927e8)
 - August 6, 2022 [commit](https://github.com/Picolab/Manifold/commit/7cbf9c053a299b93eac871a6ef0ee37a37e3a6fc)
 - April 28, 2022 [commit](https://github.com/Picolab/Manifold/commit/f04aa21eae7fcb7dc2447050bc8ace332c29b91b)
