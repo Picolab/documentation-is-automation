@@ -83,6 +83,24 @@ Would remove packages/pico-engine/node_modules/
 
 If we see any other files in there, they should be removed before publishing.
 
+### Step 5½
+
+Be sure that you are logged in to `npm` before proceeding. Otherwise a commit will occur and have to be reverted.
+
+To determine that you are logged in to `npm` run this command:
+
+```
+npm whoami
+```
+
+If you need to login, run this command:
+
+```
+npm adduser
+```
+
+and follow instructions. Once logged in to `npm` proceed to step 6.
+
 ### Step 6
 
 Now we are ready to publish!
