@@ -6,6 +6,8 @@ You'll need to have the `npm` cli on your machine and be signed in to an account
 
 https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry
 
+Use `npm whoami` to see if you're logged in. 
+
 ### Step 1
 
 Update the [change log](https://github.com/Picolab/pico-engine/blob/master/CHANGELOG.md),
