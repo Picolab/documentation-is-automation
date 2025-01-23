@@ -99,3 +99,7 @@ Restarted `nginx`
 ## added Thursday, June 13, 2024
 
 Restarted `nginx`
+
+## added Thursday, January 23, 2024
+
+Restarted `nginx` and next certifcate is good until Friday, March 28, 2025 at 9:49:17 AM
